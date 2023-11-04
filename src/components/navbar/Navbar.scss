@@ -1,0 +1,302 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #10266c;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  &.active {
+    background-color: white;
+    color: black;
+
+    button {
+      background-color: white !important;
+      color: #C0A55D !important;
+      border: 1px solid #C0A55D !important;
+    }
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+
+      .dot {
+        font-weight: bold;
+        color: #C0A55D;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+
+      span {
+        cursor: pointer;
+        text-decoration: none;
+
+        img {
+          width: 15px;
+          height: 15px;
+          margin: 0 4px;
+        }
+      }
+
+      .VipOptions {
+        position: absolute;
+        top: 4.3rem;
+        right: 25.5rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid gold;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 250px;
+        color: black;
+
+        .link {
+          border-radius: 5px;
+
+          &:hover {
+            background-color: lightgrey;
+          }
+          .title {
+            font-weight: 600;
+          }
+          .desc {
+            font-weight: 300;
+          }
+        }
+      }
+      
+      .ExpOptions {
+        position: absolute;
+        top: 4.3rem;
+        right: 21rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid gold;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 250px;
+        color: black;
+
+        .link {
+          border-radius: 5px;
+
+          &:hover {
+            background-color: lightgrey;
+          }
+          .title {
+            font-weight: 600;
+          }
+          .desc {
+            font-weight: 300;
+          }
+        }
+      }
+
+      .modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+
+        .content {
+          background: white;
+          width: 400px;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          text-align: left;
+          position: absolute;
+          top: 50%; 
+          left: 50%; 
+          transform: translate(-50%, -50%); 
+          color: black;
+            
+          .title {
+            margin: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            img {
+              height: 32px;
+              width: 32px;
+              cursor: pointer;
+            }
+          }
+
+          ul {
+            border-bottom: 1px solid #e4e5e7;
+            padding: 10px 0;
+            white-space: nowrap;
+            margin: 0 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            list-style: none;
+            list-style-image: none;
+
+            li {
+              font-size: 1.5rem;
+              font-weight: 500;
+              cursor: pointer;
+              border-radius: 5px;
+              &:hover {
+                color: #ffbf48;
+              }
+            }
+          }
+          .section {
+            display: flex;
+            flex-direction: column;
+            max-height: 18rem;
+            width: 18.3rem;
+            overflow: auto;
+          }
+        }
+      }
+    
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .MenuOptions {
+          position: absolute;
+          top: 3rem;
+          right: 0;
+          padding: 1rem;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid #C0A55D;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          width: 200px;
+          font-weight: 300;
+          color: gray;
+
+          .link {
+            border-radius: 5px;
+            &:hover {
+              background-color: lightgrey;
+            }
+          }
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #C0A55D;
+          border-color: #C0A55D;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: calc(100% - 2px);
+    height: 0;
+    border-top: 0.5px solid #ebe9e9;
+    border-bottom: 0.5px solid #ebe9e9;
+  }
+  
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    .menu-section {
+      
+      &:hover .menucontrol {
+        display: flex;
+        left: 18rem;
+      }
+    }
+    .menucontrol {
+      display: none;
+      .menulist {
+        position: absolute;
+        top: 91%; 
+        left: 8rem;
+        max-height: 30rem;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 1.5rem;
+        ul {
+          list-style: none;
+          list-style-image: none;
+          padding: 0.3rem 0.5rem;
+          li {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 10px;
+            p {
+              font-weight: 800;
+              font-size: 1.1rem;
+              margin-bottom: 0.5rem;
+            }
+            .link {
+              font-weight: 500;
+              font-size: 1rem;
+              &:hover {
+                color: #ebeb08;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
