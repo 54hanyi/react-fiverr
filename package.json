@@ -1,5 +1,6 @@
 {
-  "name": "react-app",
+  "name": "react-fiverr-ui",
+  "homepage": "https://54hanyi.github.io/react-fiverr-ui/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
