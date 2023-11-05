@@ -1,5 +1,5 @@
 import "./app.scss";
-import { createBrowserRouter, Outlet, RouterProvider, useLocation } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, useLocation  } from "react-router-dom";
 import React, { useEffect } from 'react';
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -34,7 +34,7 @@ function App() {
       </div>
     );
   };
-
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -86,7 +86,7 @@ function App() {
       path: "/login",
       element: <Login />,
     },
-  ]);
+  ], { basename: import.meta.env.VITE_BASE_URL });
 
   return <RouterProvider router={router} />;
 }
