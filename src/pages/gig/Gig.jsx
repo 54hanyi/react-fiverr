@@ -2,7 +2,7 @@ import React from "react";
 import "./Gig.scss";
 import { Slider } from "infinite-react-carousel/lib";
 import { reviews } from "../../data";
-import star from "./img/star.png";
+import star from "/img/star.png";
 
 function Gig() {
   return (
@@ -28,11 +28,11 @@ function Gig() {
             />
             <span>安納貝爾</span>
             <div className="stars">
-              <img src="./img/star.png" alt="" />
-              <img src="./img/star.png" alt="" />
-              <img src="./img/star.png" alt="" />
-              <img src="./img/star.png" alt="" />
-              <img src="./img/star.png" alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
               <span>5</span>
             </div>
           </div>
@@ -69,11 +69,11 @@ function Gig() {
               <div className="info">
                 <span>安納貝爾</span>
                 <div className="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
                   <span>5</span>
                 </div>
                 <button>聯絡我</button>
@@ -126,7 +126,7 @@ function Gig() {
                 </div>
                 <div className="stars">
                 {Array(review.stars).fill().map((_, starIndex) => (
-                  <img key={starIndex} src="./img/star.png" alt="" />
+                  <img key={starIndex} src={star} alt="" />
                 ))}
                   <span>{review.stars}</span>
                 </div>
