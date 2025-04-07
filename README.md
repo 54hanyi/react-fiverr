@@ -88,5 +88,5 @@ vite.config.ts
 
 ## 🚀 線上展示與原始碼連結
 
-- 🔗 [👉 線上 Try It](https://your-gh-page-link.com)
-- 🧑‍💻 [GitHub 原始碼](https://github.com/your-repo-link)
+- 🔗 [👉 線上 Try ](https://54hanyi.github.io/react-fiverr/)
+- 🧑‍💻 [GitHub 原始碼](https://github.com/54hanyi/react-fiverr)
